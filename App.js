@@ -2,21 +2,23 @@
 // component only return 1 induk use wrapper like <View>
 import React, { Component } from 'react'; 
 // to create text import this boi ;)
-import {Image, Text, TextInput, View} from 'react-native';
+import {Image, ScrollView, Text, TextInput, View} from 'react-native';
 
 // create component with functional component
 // Arrow function
 const App = () => {
   return (
     <View>
-      <View style={{width: 80, height: 80, backgroundColor: '#48dbfb'}} />
-      <Text>Tama Tamvan</Text>
-      <Tama/>
-      <Text>Hei tayo</Text>
-      <Photo />
-      <TextInput style={{borderWidth: 1}}/>
-      <BoxGreen />
-      <Profile />
+      <ScrollView>
+        <View style={{width: 80, height: 80, backgroundColor: '#48dbfb'}} />
+        <Text>Tama Tamvan</Text>
+        <Tama/>
+        <Text>Hei tayo</Text>
+        <Photo />
+        <TextInput style={{borderWidth: 1}}/>
+        <BoxGreen />
+        <Profile />
+      </ScrollView>
     </View>
   );
 };
