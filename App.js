@@ -2,11 +2,40 @@
 // component only return 1 induk use wrapper like <View>
 import React, { Component } from 'react'; 
 // to create text import this boi ;)
-import {Image, ScrollView, Text, TextInput, View} from 'react-native';
+import {Image, ScrollView, Text, TextInput, View, StyleSheet} from 'react-native';
 
 // create component with functional component
 // Arrow function
 const App = () => {
+  return <StylingReactNativeComponent/>;
+};
+
+const StylingReactNativeComponent = () => {
+  return (
+    <View>
+      <Text style={styles.text}>Styling Component</Text>
+      <View 
+      style={{
+        width: 100, 
+        height: 100, 
+        backgroundColor: '#0abde3',
+        borderWidth: 2,
+        borderColor:'#5f27cd',
+        marginTop: 20,
+        marginLeft: 20,
+      }}
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 18,
+  },
+});
+
+const SampleComponent = () => {
   return (
     <View>
       <ScrollView>
@@ -22,6 +51,7 @@ const App = () => {
     </View>
   );
 };
+
 
 // Another way to create function
 // function App(){
